@@ -1,15 +1,15 @@
 // Importing modules 
-
 const fs = require("fs")
-const dotenv = require("dotenv").config()
+require("dotenv").config()
+const path = require("path")
 
 // Link to the database 
 
-const db = require("./db")
+const db = require("./connect")
 
 // Load the SQL statements
 
-const sql = fs.readFileSync("setup.sql").toString()
+const sql = fs.readFileSync(path.join(__dirname + "/setup.sql")).toString()
 
 // Run the query
 
