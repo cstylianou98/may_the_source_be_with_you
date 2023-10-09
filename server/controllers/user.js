@@ -4,16 +4,16 @@ const Token = require("../models/token")
 
 const register = async (req,res) => {
     try{
-        const {username, password} = req.body
+        const data = req.body
 
         //Generate salt with specific cost
-        const salt = await bcrypt.genSalt(parInt(process.env.BCRYPT_SALT_ROUNDS));
+        const salt = await bcrypt.genSalt(parseInt(process.env.BCRYPT_SALT_ROUNDS));
 
         //Hash the password
-        const hash = await bcrypt.hash(password, salt);
-        password = hash
+        const hash = await bcrypt.hash(data.password, salt);
+        data.password = hash
 
-        const result = await User.create({username, password})
+        const result = await User.create(data)
 
         res.status(201).send(result)
 
