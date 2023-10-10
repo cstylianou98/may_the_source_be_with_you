@@ -14,5 +14,8 @@ const sql = fs.readFileSync(path.join(__dirname + "/setup.sql")).toString()
 // Run the query
 
 db.query(sql)
-    .then(data => console.log("Setup is complete"))
+    .then(data => {
+        db.end()
+        console.log("Setup is complete")
+    })
     .catch(error => console.log(error))
