@@ -17,7 +17,9 @@ class User {
 
     static async create(data) {
         const {username, password} = data;
-        let response = await db.query("INSERT INTO users (username, password) VALUES ($1, $2) RETURNING users_id;", [username, password])        
+        let response = await db.query("INSERT INTO users (username, password) VALUES ($1, $2)", [username, password])
+        const newUser = await User.checkUsername(username)
+        return newUser
     }
 
     

@@ -1,15 +1,14 @@
-document.getElementById("login-form").addEventListener("submit", async(e) => {
+document.getElementById("signup-form").addEventListener("submit", async(e) => {
 
     e.preventDefault();
 
-    // const username = document.getElementById("login-username")
-    // const password = document.getElementById("login-password")
+    // const username = document.getElementById("signup-username")
+    // const password = document.getElementById("signup-password")
 
     // console.log(username.value + password.value)
 
 
     const form = new FormData(e.target)
-    // console.log(form)
 
     const options = {
         method: "POST",
@@ -23,20 +22,20 @@ document.getElementById("login-form").addEventListener("submit", async(e) => {
         })
     }
 
-    const response = await fetch("http://localhost:3000/login", options);
+    const response = await fetch("http://localhost:3000/register", options);
     console.log(response)
     
     console.log("Exits fetch statement")
 
     const data = await response.json();
 
-    if (response.status == 200){
-        localStorage.setItem("token", data.token)
-        console.log(data.token)
-        window.location.assign("homePage.html")
+    if (response.status == 201){
+        // localStorage.setItem("token", data.token)
+        // console.log(data.token)
+        // window.location.assign("homePage.html")
+        window.location.assign("index.html")
     } else {
         alert(data.error)
     }
 
 })
-
