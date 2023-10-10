@@ -23,6 +23,7 @@ const allUser = async(req,res) => {
 const add = async(req,res) => {
     try{
         const data = req.body
+        data.volunteering_type = req.params.event
         const result = await Volunteering.addVolunteer(data)
         res.status(201).json(result)
     }catch(err){
@@ -50,7 +51,7 @@ const update = async(req,res) => {
         data.email ||= volunteer.email
         data.contact_info ||= volunteer.contact_info
         data.address ||= volunteer.address
-        const result = await volunteer.update(data)
+        const result = await volunteer.editVolunteer(data)
         res.status(200).json(result)
     } catch (err) {
         res.status(400).json({error: err.message})
