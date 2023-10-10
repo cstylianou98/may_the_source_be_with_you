@@ -1,11 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> Hello you</h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Council website</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/homePage.css">
+    <script type="text/javascript" src=""></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    ></script>
+  </head>
+
+  <body oncontextmenu="return false" class="snippet-body">
+
+    <!-- Announcements -->
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container">
+          <a class="navbar-brand" href ="index.html">
+            <img src="./assets/logout.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Log Out
+          </a>
+      </nav>
+
+    <h1 class="text-center pb-5">Announcements</h1>
+    <div class="bd-example pb-5">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2">
+          <div id="list-example" class="list-group">
+            <a
+              class="list-group-item list-group-item-action "
+              href="#list-item-1"
+              >Item 1</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-2"
+              >Item 2</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-3"
+              >Item 3</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              href="#list-item-4"
+              >Item 4</a
+            >
+          </div>
+        </div>
+        <div class="col-6">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-offset="0"
+            class="scrollable-container"
+            tabindex="0"
+          >
+            <h4 id="list-item-1">Item 1</h4>
+            <p>
+              This is some placeholder content for the scrollspy page. Note that
+              as you scroll down the page, the appropriate navigation link is
+              highlighted. It's repeated throughout the component example. We
+              keep adding some more example copy here to emphasize the scrolling
+              and highlighting.
+            </p>
+            <h4 id="list-item-2">Item 2</h4>
+            <p>
+              This is some placeholder content for the scrollspy page. Note that
+              as you scroll down the page, the appropriate navigation link is
+              highlighted. It's repeated throughout the component example. We
+              keep adding some more example copy here to emphasize the scrolling
+              and highlighting.
+            </p>
+            <h4 id="list-item-3">Item 3</h4>
+            <p>
+              This is some placeholder content for the scrollspy page. Note that
+              as you scroll down the page, the appropriate navigation link is
+              highlighted. It's repeated throughout the component example. We
+              keep adding some more example copy here to emphasize the scrolling
+              and highlighting.
+            </p>
+            <h4 id="list-item-4">Item 4</h4>
+            <p>
+              This is some placeholder content for the scrollspy page. Note that
+              as you scroll down the page, the appropriate navigation link is
+              highlighted. It's repeated throughout the component example. We
+              keep adding some more example copy here to emphasize the scrolling
+              and highlighting.
+            </p>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <!-- Scrolling tiles -->
+    
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h3 class="mb-3">Current Community Issues</h3>
+          </div>
+          <div class="col-6 text-right">
+            <a
+              class="btn btn-primary mb-3 mr-1"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a
+              class="btn btn-primary mb-3"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-12">
+            <div
+              id="carouselExampleIndicators2"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/english-countryside.webp"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Countryside</h4>
+                          <p class="card-text">
+                            Florin has always known for its beautiful countryside in which many great and historical events have occurred. However, with a lack of maintanence much of the local landscape is becoming unrecogniseable. We need volunteers to help maintain and care for our landscape.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/library.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Library</h4>
+                          <p class="card-text">
+                            The library has been a pinnacle in the community for years providing access to valuable knowledge. More recently, we have encountered staffing shortages which may result in closing library. If you're interested in helping take a look at he volunteering page.
+                          </p>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/recycling.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Recycling</h4>
+                          <p class="card-text">
+                            Our recycling center is bursting with potential, a beacon of sustainability in our community. As the demand for responsible waste management grows, we invite you to join us in the mission to educate and efficiently manage our recycling facility. Volunteer to make a lasting impact, shaping a greener future for generations to come. Together, let's transform our overflowing center into a hub of environmental consciousness and positive change.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/skills.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Skills Shortage</h4>
+                          <p class="card-text">
+                            Generations of wisdom, skills passed down. Today, a shortage looms. Be the link. Volunteer to teach, preserve our community's legacy!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="col-md-12 mb-4 text-center"> 
+        <a id="volunteeringButton" href="volunteer.html" class="btn btn-primary mt-auto volunteering-link">Volunteer Here!</a>
+      </div>
+     
+    </section>
+    <script type="text/javascript"></script>
+  </body>
 </html>
