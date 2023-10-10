@@ -1,0 +1,20 @@
+.scrollable-container {
+    height: 200px; /* Adjust the height as needed */
+    overflow-y: scroll;
+ }
+
+.list-group-item{
+    height: 50px;
+}
+
+
+.img-fluid{
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body{
+    height: 275px;
+    object-fit: cover;
+}
+
