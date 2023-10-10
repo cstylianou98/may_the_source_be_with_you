@@ -1,10 +1,17 @@
 .scrollable-container {
     height: 200px; /* Adjust the height as needed */
     overflow-y: scroll;
- }
+    background-color: aliceblue;
+    padding: 10px 20px;
+
+  
+}
 
 .list-group-item{
     height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
@@ -14,7 +21,54 @@
 }
 
 .card-body{
-    height: 275px;
+    height: 350px;
     object-fit: cover;
+    background-color: aliceblue;
 }
+
+body {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("background.jpg");    
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+h1{
+    font-size:2.5rem;;
+}
+
+.navbar-brand{
+    font-size: 16px;
+    font-family:'Montserrat', sans-serif;
+    color: black;
+}
+
+
+.arrow-btn{
+    background-color: rgba(62, 61, 61, 0.873);
+    border-color: grey;
+}
+
+#volunteeringButton{
+    background-color: rgba(62, 61, 61, 0.873);
+    border-color: grey;
+    font-size: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-nav .nav-link.active {
+    color: black; 
+    font-size: 16px;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+
+
 
