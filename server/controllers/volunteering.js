@@ -25,7 +25,7 @@ const add = async(req,res) => {
         const data = req.body
         data.volunteering_type = req.params.event
         const result = await Volunteering.addVolunteer(data)
-        res.status(201).json(result)
+        res.status(201).json({result: result, message: "You have successfully volunteered. We look forward to seeing you soon"})
     }catch(err){
         res.status(401).json({error: err.message})
     }
