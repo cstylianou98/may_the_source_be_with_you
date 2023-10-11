@@ -29,7 +29,6 @@ const logIn = async (req,res) => {
 
         // Check if username exists 
         const user = await User.checkUsername(username)
-
         // Compare passwords using bcrypt 
         const legit = await bcrypt.compare(password, user.password)
 
@@ -38,15 +37,40 @@ const logIn = async (req,res) => {
             throw new Error ("Username and password does not match")
         } else {
             // Create a token
-            const token = await Token.create(user.users_id)
-
-            // Sending a response to the client 
-            res.status(200).json({token:
-            token.token})
+            // if(await Token.getByUser(user.users_id) != ErrorEvent){
+            //     try {
+            //         const prevToken = await Token.getByUser(user.users_id)
+            //         const result = await prevToken.destroyToken()
+            //     } catch (err) {
+            //         res.status(404).json({error: err.message})
+            //     }
+            // }
+            try {
+                const prevToken = await Token.getByUser(user.users_id)
+                const result = await prevToken.destroyToken()
+            } catch (err) {
+                //I don't know how else to say I WANT the error to happen
+            }finally{
+                const token = await Token.create(user.users_id)
+                // Sending a response to the client 
+                res.status(200).json({token:
+                token.token})
+            }
             }
     } catch (err){
         res.status(401).json({error: err.message})
     }
 }
 
-module.exports = { logIn, register}
+const logOut = async (req,res) => {
+    try {
+        const token = req.body.token
+        const fullToken = await Token.getOneByToken(token)
+        const result = fullToken.destroyToken()
+        res.status(204).json(result)
+    } catch (err) {
+        res.status(404).json({error: err.message})
+    }
+}
+
+module.exports = { logIn, register, logOut}
