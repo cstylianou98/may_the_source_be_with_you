@@ -40,6 +40,7 @@ class Volunteering {
             const response = await db.query("INSERT INTO volunteering (users_id, name, email, contact_info, address, volunteering_type) VALUES ($1, $2, $3, $4, $5, $6) RETURNING volunteering_id;",[users_id,name,email,contact_info,address,volunteering_type])
             return await Volunteering.getById(response.rows[0].volunteering_id)
         }catch(err){
+            // New section
             throw new Error("You have already volunteered!")
         }
     }
