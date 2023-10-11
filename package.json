@@ -7,8 +7,9 @@
     "setup-db": "node ./server/database/setup.js",
     "dev": "nodemon ./server/index.js",
     "both": "node ./server/database/setup.js && nodemon ./server/index.js",
-    "test": "jest",
-    "coverage": "jest --coverage --coverageDirectory='coverage' --collectCoverageFrom='./'"
+    "test": "jest --colors",
+    "coverage": "jest --colors --coverage",
+    "coverageMAX": "jest --colors --coverage --collectCoverageFrom=./**/*.{js,jsx}"
   },
   "keywords": [],
   "author": "",
@@ -24,5 +25,10 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "nodemon": "^3.0.1"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "./coverage/"
+    ]
   }
 }
