@@ -2,14 +2,11 @@ document.getElementById("login-form").addEventListener("submit", async(e) => {
 
     e.preventDefault();
 
-    // const username = document.getElementById("login-username")
-    // const password = document.getElementById("login-password")
-
-    // console.log(username.value + password.value)
 
 
     const form = new FormData(e.target)
-    // console.log(form)
+
+    const isAdminBoxChecked = form.get("adminCheck") 
 
     const options = {
         method: "POST",
@@ -22,20 +19,29 @@ document.getElementById("login-form").addEventListener("submit", async(e) => {
             password: form.get("password")
         })
     }
+    if(isAdminBoxChecked === "on"){
+        const response = await fetch("http://localhost:3000/admin", options);
+        const data = await response.json();
 
-    const response = await fetch("http://localhost:3000/login", options);
-    console.log(response)
-    
-    console.log("Exits fetch statement")
+        if (response.status == 200){
+            localStorage.setItem("token", data.token)
+            console.log(data.token)
+            window.location.assign("adminPage.html")
+        } else {
+            alert(data.error)
+        }
 
-    const data = await response.json();
-
-    if (response.status == 200){
-        localStorage.setItem("token", data.token)
-        console.log(data.token)
-        window.location.assign("homePage.html")
     } else {
-        alert(data.error)
+        const response = await fetch("http://localhost:3000/login", options);
+        const data = await response.json();
+
+        if (response.status == 200){
+            localStorage.setItem("token", data.token)
+            console.log(data.token)
+            window.location.assign("homePage.html")
+        } else {
+            alert(data.error)
+        }
     }
 
 })
