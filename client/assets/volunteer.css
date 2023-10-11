@@ -1,11 +1,12 @@
 body {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("background.jpg");    
+    background-image: url(./welcome.jpg);    
     height: 100%;
     width:100%;
     margin: 0;
     padding: 0;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
@@ -62,32 +63,31 @@ body {
     
 
 .welcome{
-    width: 1000px;
-    height: 800px;
-    background-image: url(./welcome.jpg);
-    background-size: cover;
+    width: 100%;
+    margin: 5px;
+    /* height: 100vh; */
 }
 
          
-         .btn-grad {
-            background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
-            margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;            
-            box-shadow: 0 0 20px #eee;
-            border-radius: 10px;
-            display: block;
-          }
+.btn-grad {
+background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+margin: 10px;
+padding: 15px 45px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+display: block;
+}
 
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-          }
+.btn-grad:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+}
          
 
 

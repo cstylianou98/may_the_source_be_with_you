@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/volunteer.css">
-
     <script src="volunteer.js" defer></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
@@ -15,13 +14,7 @@
     <title>Volunteer</title>
 </head>
 <body>
-
-
-    <!-- <button type="button" class="btn btn-primary btn-lg btn-block" id="countryside">Countryside</button>
-    <button type="button" class="btn btn-secondary btn-lg btn-block" id="recycling">Recycling</button>
-    <button type="button" class="btn btn-primary btn-lg btn-block" id="skills">Skills</button>
-    <button type="button" class="btn btn-secondary btn-lg btn-block" id="library">Library</button> -->
-
+    
     <div class="container">
         <div class="welcome">
             <h2 class="m-3 text-center">Welcome to the  Volunteering Page</h2>
@@ -41,81 +34,77 @@
                 🏠 <b>Get Involved, Make a Difference!</b>
                 Your community thrives when you're an active part of it. Explore the programs, find your passion, and let's create a community where volunteering is not just an activity — it's a way of life. Together, let's make a positive impact that resonates for generations to come. Welcome to the heart of community involvement!</p>
         </div>
-
-
         
-    </div>
 
-    <!-- Select volunteering type -->
+        <h1 class="text-center my-3">Select Volunteering Type:</h1>
 
-<h1 class="text-center my-3">Select Volunteering Type:</h1>
-
-<div class="btn-container">
-    <button id="countryside">Countryside</button>
-    <button id="recycling">Recycling</button>
-    <button id="skills">Skills</button>
-    <button id="library">Library</button>
-</div>
-
-<!-- Volunteering Information -->
-
-<div class="info countryside m-3 text-center disappear" >
-    <h2>Countryside Volunteering</h2>
-    <p>Escape to the tranquility of the countryside and contribute to the well-being of our rural landscapes through volunteering. Embrace the outdoors as you engage in a variety of meaningful activities. Join us in planting trees to foster greenery, maintaining hiking trails for the community to enjoy, or assisting local farmers with their harvests. Whether you have a green thumb, a passion for wildlife conservation, or simply a love for the open spaces, there's a place for you. Connect with nature and your community, leaving a lasting impact on the picturesque countryside that we all cherish. Together, let's sow the seeds of positive change and cultivate a stronger, more sustainable future.</p>
-</div>
-<div class="info recycling m-3  text-center disappear">
-    <h2>Help us to recycle</h2>
-    <p>Transform waste into opportunity! Join our recycling initiatives. Volunteer to sort, educate, and make our community greener. Every recycled item is a step towards a sustainable tomorrow.</p>
-</div>
-<div class=" info skills m-3  text-center disappear">
-    <h2>Teach your skills</h2>
-    <p>
-        Empower our community through skills sharing! Volunteer to teach or learn. Whether it's crafting, coding, or cooking, your expertise matters. Let's build a network where knowledge is the key to collective growth.
-    </p>
-</div>
-<div class="info library m-3  text-center disappear">
-    <h2>Save the library</h2>
-    <p>Open the door to a world of knowledge! Volunteer at our library. Help organize events, share your love for reading, or assist visitors. Together, let's make our library a vibrant hub for learning and connection.</p>
-</div>
-
-    <!-- Volunteering Form -->
-
-     <div class="registration-form disappear">
-        <form id="volunteering-form">
-            <div class="text-center py-3">
-                <h2 class="volunteering-type"></h2>
-                <h3 class="volunteering-info"></h3>
-            </div>
-            <div class="form-icon">
-                <span><i class="icon icon-user"></i></span>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control item" id="name" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control item" id="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number" required>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control item" id="address" placeholder="Address" required>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-block create-account">Volunteer</button>
-            </div>
-            <p class="text-center" id="volunteering-complete"></p>
-        </form>
-        <div class="social-media">
-            <h5>Sign up with social media</h5>
-            <div class="social-icons">
-                <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
-                <a href="#"><i class="icon-social-google" title="Google"></i></a>
-                <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
-            </div>
+        <div class="btn-container">
+            <button id="countryside">Countryside</button>
+            <button id="recycling">Recycling</button>
+            <button id="skills">Skills</button>
+            <button id="library">Library</button>
         </div>
-    </div>
+        
+        <!-- Volunteering Information -->
+        
+        <div class="info countryside m-3 text-center disappear" >
+            <h2>Countryside Volunteering</h2>
+            <p>Escape to the tranquility of the countryside and contribute to the well-being of our rural landscapes through volunteering. Embrace the outdoors as you engage in a variety of meaningful activities. Join us in planting trees to foster greenery, maintaining hiking trails for the community to enjoy, or assisting local farmers with their harvests. Whether you have a green thumb, a passion for wildlife conservation, or simply a love for the open spaces, there's a place for you. Connect with nature and your community, leaving a lasting impact on the picturesque countryside that we all cherish. Together, let's sow the seeds of positive change and cultivate a stronger, more sustainable future.</p>
+        </div>
+        <div class="info recycling m-3  text-center disappear">
+            <h2>Help us to recycle</h2>
+            <p>Transform waste into opportunity! Join our recycling initiatives. Volunteer to sort, educate, and make our community greener. Every recycled item is a step towards a sustainable tomorrow.</p>
+        </div>
+        <div class=" info skills m-3  text-center disappear">
+            <h2>Teach your skills</h2>
+            <p>
+                Empower our community through skills sharing! Volunteer to teach or learn. Whether it's crafting, coding, or cooking, your expertise matters. Let's build a network where knowledge is the key to collective growth.
+            </p>
+        </div>
+        <div class="info library m-3  text-center disappear">
+            <h2>Save the library</h2>
+            <p>Open the door to a world of knowledge! Volunteer at our library. Help organize events, share your love for reading, or assist visitors. Together, let's make our library a vibrant hub for learning and connection.</p>
+        </div>
+        
+            <!-- Volunteering Form -->
+        
+             <div class="registration-form disappear">
+                <form id="volunteering-form">
+                    <div class="text-center py-3">
+                        <h2 class="volunteering-type"></h2>
+                        <h3 class="volunteering-info"></h3>
+                    </div>
+                    <div class="form-icon">
+                        <span><i class="icon icon-user"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="address" placeholder="Address" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-block create-account">Volunteer</button>
+                    </div>
+                    <p class="text-center" id="volunteering-complete"></p>
+                </form>
+                <div class="social-media">
+                    <h5>Sign up with social media</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
+                        <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                        <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
+                    </div>
+                </div>
+            </div>
 
+    </div>
 
 </body>
 </html>
