@@ -6,6 +6,7 @@ const cors = require("cors")
 // Importing routers
 
 const homeRouter = require("./routes/user")
+const volunteerRouter = require("./routes/volunteering")
 
 // For serving static files
 
@@ -22,6 +23,7 @@ app.use(cors())
 
 // Using the routers 
 
+app.use("/volunteer", volunteerRouter)
 app.use("/", homeRouter)
 
 // Exporting the server

@@ -2,13 +2,13 @@ document.getElementById("login-form").addEventListener("submit", async(e) => {
 
     e.preventDefault();
 
-    const username = document.getElementById("login-username")
-    const password = document.getElementById("login-password")
+    // const username = document.getElementById("login-username")
+    // const password = document.getElementById("login-password")
 
-    console.log(username.value + password.value)
+    // console.log(username.value + password.value)
 
 
-    // const form = new FormData(e.target)
+    const form = new FormData(e.target)
     // console.log(form)
 
     const options = {
@@ -18,8 +18,8 @@ document.getElementById("login-form").addEventListener("submit", async(e) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            username: username.value,
-            password: password.value
+            username: form.get("username"),
+            password: form.get("password")
         })
     }
 

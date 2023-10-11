@@ -1,8 +1,7 @@
 
  :root {
-    --primary-colour: #3cffd8;
-    --secondary-colour: #23527c;
-    --tertiary-colour: #333333;
+    --primary-colour: #23527c;
+    --secondary-colour: #333333;
 
     --font: "FontAwesome"
  }
@@ -20,6 +19,7 @@
 body {
     text-align: left; 
     line-height: 1.8;
+
     color: black;
     min-width: 992px !important; 
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("background.jpg");    
@@ -6946,7 +6946,7 @@ caption {
     color: #0f6674 !important; }
   
   .text-warning {
-    color: #ffc107 !important; }
+    color: red !important; }
   
   a.text-warning:hover, a.text-warning:focus {
     color: #ba8b00 !important; }
@@ -7051,7 +7051,7 @@ caption {
         border-color: #dee2e6; }
     .table .thead-dark th {
       color: inherit;
-      border-color: #dee2e6; } }
+      border-color: red; } }
   
   
   .bg-primary {
@@ -7068,7 +7068,7 @@ caption {
   
   .heading-section {
     font-size: 28px;
-    color: #000; }
+    color: white; }
   
   .img {
     background-size: cover;
@@ -7137,7 +7137,7 @@ caption {
       outline: none !important;
       -webkit-box-shadow: none;
       box-shadow: none;
-      border: 1px solid --teal; }
+      border: 1px solid --primary-colour; }
   
   
   .checkbox-wrap {
@@ -7184,9 +7184,9 @@ caption {
   
   /* Style the checkmark/indicator */
   .checkbox-primary {
-    color: var(--teal); }
+    color: var(--primary-colour); }
     .checkbox-primary input:checked ~ .checkmark:after {
-      color: var(--teal); }
+      color: var(--primary-colour); }
   
   .btn {
     cursor: pointer;
@@ -7197,19 +7197,19 @@ caption {
     .btn:hover, .btn:active, .btn:focus {
       outline: none; }
     .btn.btn-primary {
-      background: var(--teal) !important;
-      border: 1px solid --teal !important;
+      background: var(--primary-colour) !important;
+      border: 1px solid --primary-colour !important;
       color: black !important; }
       .btn.btn-primary:hover {
-        border: 1px solid --teal;
+        border: 1px solid var(--primary-colour);
         background: transparent;
-        color: var(--teal); }
+        color: var(--primary-colour); }
       .btn.btn-primary.btn-outline-primary {
-        border: 1px solid --teal;
+        border: 1px solid --primary-colour;
         background: transparent;
-        color: var(--teal); }
+        color: var(--primary-colour); }
         .btn.btn-primary.btn-outline-primary:hover {
           border: 1px solid transparent;
-          background: var(--teal);
+          background: var(--primary-colour);
           color: black; }
   
