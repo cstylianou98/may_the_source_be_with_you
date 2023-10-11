@@ -85,6 +85,24 @@ class Token {
         }
     }
 
+    async destroyToken() {
+        const response = await db.query("DELETE FROM token WHERE token_id = $1 RETURNING *;", [this.token_id])
+        if (response.rows.length != 1){
+            throw new Error("Unable to delete token")
+        }else{
+            return new Token(response.rows[0])
+        }
+    }
+
+    static async getByUser(user_id) {
+        const response = await db.query("SELECT * FROM token WHERE users_id = $1", [user_id]);
+        if (response.rows.length != 1) {
+            throw new Error("Unable to locate token.");
+        } else {
+            return new Token(response.rows[0]);
+        }
+    }
+
 }
 
 module.exports = Token

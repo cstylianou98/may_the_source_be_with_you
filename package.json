@@ -1,11 +1,13 @@
 {
   "name": "week_6",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "setup-db": "node ./server/database/setup.js",
     "dev": "nodemon ./server/index.js",
-    "both": "node ./server/database/setup.js && nodemon ./server/index.js"
+    "both": "node ./server/database/setup.js && nodemon ./server/index.js",
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +21,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "nodemon": "^3.0.1"
-  },
-  "description": ""
+  }
 }

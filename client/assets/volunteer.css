@@ -14,9 +14,52 @@ body {
     display: none;
 }
 
-button{
-    width: 100px;
+/* Select Volunteering Type */
+
+.btn-container{
+    /* Dimensions */
+    height: 500px;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.btn-container button{
+    width: 400px;
+    height: 150px;
+    margin: 7px;
+
+    /* Font Styling */
+    font-size: 30px;
+
+    /* Button Styling */
+    border-radius: 23px;
+}
+
+.btn-container button:hover{
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+/* Volunteering Information */
+
+.info p{
+    font-size: 30px;
+}
+
+.info h2{
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+.volunteering-type{
+    text-decoration: underline;
+}
+
+/* Welcome Message */
+    
 
 .welcome{
     width: 1000px;
@@ -25,7 +68,27 @@ button{
     background-size: cover;
 }
 
+         
+         .btn-grad {
+            background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
 
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
 
 
 .registration-form{
@@ -121,3 +184,8 @@ button{
         line-height: 70px;
     }
 }
+
+
+
+        
+ 
