@@ -16,10 +16,14 @@ class User {
     }
 
     static async create(data) {
+        try{
         const {username, password} = data;
-        let response = await db.query("INSERT INTO users (username, password) VALUES ($1, $2)", [username, password])
-        const newUser = await User.checkUsername(username)
-        return newUser
+
+        let response = await db.query("INSERT INTO users (username, password) VALUES ($1, $2) RETURNING users_id;", [username, password]) 
+        } catch(err){ 
+          throw new Error("Username already exists")
+        }
+
     }
 
     
