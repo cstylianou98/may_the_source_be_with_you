@@ -162,12 +162,10 @@ const submitForm = async (e) => {
         email.innerText=""
         contactInfo.innerText=""
         address.innerText=""
-    }else{
+    } else {
         // Test for now
-        alert("Error submitting form")
+        alert(data.error)
     }
-    
-
 }
 
 // Adding event listener to the form 
