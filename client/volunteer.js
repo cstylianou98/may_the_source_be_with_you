@@ -140,7 +140,7 @@ const submitForm = async (e) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            users_id: localStorage.token,
+            token: localStorage.getItem("token"),
             name: name.value,
             email: email.value,
             contact_info: contactInfo.value,

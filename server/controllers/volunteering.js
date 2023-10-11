@@ -1,3 +1,4 @@
+const Token = require('../models/token')
 const Volunteering = require('../models/volunteering')
 
 const allEvent = async(req,res) => {
@@ -24,6 +25,8 @@ const add = async(req,res) => {
     try{
         const data = req.body
         data.volunteering_type = req.params.event
+        const token = await Token.getOneByToken(data.token)
+        data.users_id = token.users_id
         const result = await Volunteering.addVolunteer(data)
         res.status(201).json({result: result, message: "You have successfully volunteered. We look forward to seeing you soon"})
     }catch(err){
