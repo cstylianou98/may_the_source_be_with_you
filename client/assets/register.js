@@ -27,7 +27,7 @@ document.getElementById("signup-form").addEventListener("submit", async(e) => {
     
     console.log("Exits fetch statement")
 
-    const data = await response.json();
+    //const data = await response.json();
 
     if (response.status == 201){
         // localStorage.setItem("token", data.token)
@@ -50,7 +50,7 @@ document.getElementById("signup-form").addEventListener("submit", async(e) => {
         //     alert(data.error)
         // }
     } else {
-        alert(data.error)
+        alert(response.error)
     }
 
 })
