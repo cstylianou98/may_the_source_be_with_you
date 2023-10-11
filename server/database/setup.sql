@@ -51,7 +51,8 @@ CREATE TABLE volunteering(
 
 INSERT INTO admins (username, password) 
 VALUES ('constantinos', 'stylianou'),
-('ishaaq', 'baig');
+('ishaaq', 'baig'),
+('bee', 'vanZyl')
 
 
 

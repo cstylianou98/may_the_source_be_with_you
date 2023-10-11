@@ -3,6 +3,9 @@ const bcrypt = require("bcrypt")
 const Token = require("../models/token")
 
 
+
+
+
 const AdminLogIn = async (req,res) => {
     try{
         // Storing the data from req.body
@@ -18,8 +21,7 @@ const AdminLogIn = async (req,res) => {
 
         // Check if admin username exists 
         const admin = await Admin.checkAdminUsername(data.username)
-        console.log(admin.password)
-        console.log(data.password)
+       
 
         // Compare passwords using bcrypt 
         const legit = await bcrypt.compare(admin.password, data.password)
