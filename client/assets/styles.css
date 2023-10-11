@@ -96,6 +96,7 @@ small,
     font-size: 80%;
     font-weight: 400; 
 }
+
   
 a {
     color: #007bff;
@@ -7142,6 +7143,7 @@ caption {
   
   .checkbox-wrap {
     display: block;
+    border:#000 1px;
     position: relative;
     padding-left: 30px;
     margin-bottom: 12px;

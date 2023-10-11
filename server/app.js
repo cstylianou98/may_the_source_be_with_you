@@ -6,11 +6,13 @@ const cors = require("cors")
 // Importing routers
 
 const homeRouter = require("./routes/user")
+const adminRouter = require("./routes/admin")
 const volunteerRouter = require("./routes/volunteering")
 
 // For serving static files
 
 const path = require("path")
+
 
 // Create server
 
@@ -25,6 +27,7 @@ app.use(cors())
 
 app.use("/volunteer", volunteerRouter)
 app.use("/", homeRouter)
+app.use("/", adminRouter)
 
 // Exporting the server
 
