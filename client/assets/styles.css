@@ -5,6 +5,7 @@
 
     --font: "FontAwesome"
  }
+
   
   html {
     font-family: var(--font);
@@ -16,7 +17,7 @@
     display: block; 
 }
   
-body {
+/* body {
     text-align: left; 
     line-height: 1.8;
 
@@ -31,6 +32,19 @@ body {
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+} */
+
+body {
+  background-color: rgba(183, 171, 171, 0.515);
+  height: 100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
   
   [tabindex="-1"]:focus {
@@ -7068,8 +7082,8 @@ caption {
     padding-bottom: 0; }
   
   .heading-section {
-    font-size: 28px;
-    color: white; }
+    font-size: 34px;
+    color: black; }
   
   .img {
     background-size: cover;

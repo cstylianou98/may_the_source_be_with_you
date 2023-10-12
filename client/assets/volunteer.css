@@ -1,5 +1,6 @@
 body {
-    background-image: url(./welcome.jpg);    
+    /* background-image: url(./welcome.jpg);     */
+    background-color: rgba(183, 171, 171, 0.515);
     height: 100%;
     width:100%;
     /* margin: 0;
@@ -15,13 +16,7 @@ body {
     font-size: 22px;
 }
 
-.welcome h1{
-    text-decoration: underline;
-}
 
-.select-volunteering-type{
-    text-decoration: underline;
-}
 
 .disappear{
     display: none;
@@ -39,8 +34,8 @@ body {
 /* Select Volunteering Type */
 
 .my-btn{
-    width: 400px;
-    height: 150px;
+    width: 300px;
+    height: 100px;
     margin: 10px;
 
     /* Font Styling */
@@ -70,25 +65,21 @@ body {
 
 .info h2{
     font-size: 45px;
-    text-decoration: underline;
 }
 
-.volunteering-type{
-    text-decoration: underline;
-}
 
 /* Welcome Message */
 
          
 .btn-grad {
-background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+background-color: rgba(255, 255, 255, 0.8);;
 margin: 10px;
 padding: 15px 45px;
 text-align: center;
 text-transform: uppercase;
 transition: 0.5s;
 background-size: 200% auto;
-color: white;            
+color: black;            
 box-shadow: 0 0 20px #eee;
 border-radius: 10px;
 }
