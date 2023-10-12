@@ -35,7 +35,27 @@ describe('api server', () => {
     request(api)
         .post('/login')
         .send(testData)
-        .expect(200) 
+        .expect(200,done)
+    done()
+  })
+
+  test('responds to POST /login with status 401', (done) => {
+    const testData = {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            username: "b",
+            password: "3"
+        })
+    }
+
+    request(api)
+        .post('/login')
+        .send(testData)
+        .expect(401)
+        .expect({error: 'Username and password does not match'},done)
     done()
   })
 })
