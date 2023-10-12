@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/volunteer.css">
-    <script src="volunteer.js" defer></script>
+    <script src="assets/volunteer.js" defer></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="assets/js/script.js"></script>
@@ -14,80 +14,35 @@
     <title>Volunteer</title>
 </head>
 <body>
-
-<!-- Navbar -->
-
-<nav class="navbar navbar-expand-lg bg-light">
-<div class="container">
-    <a class="navbar-brand" id="logout">
-    <img src="./assets/logout.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-    Log Out
-    </a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ms-auto">
-    <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="aboutUs.html">About Us</a>
-    </li>
-</ul>
-</div>
-</nav>
-
-    <!-- Beginning of Content -->
     
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="welcome color-transition">
-                    <h2 class="text-center font-weight-bold"> Volunteer Now!</h2><br>
-                    <p class="text-center">
-                        📚 <b>Library Enthusiasts Wanted!</b><br>
-                        Join us in shaping our literary haven. Whether you're passionate about organizing shelves, hosting book clubs, or simply creating a welcoming atmosphere, there's a place for you at our library. Let's build a space where knowledge thrives and stories come to life!<br><br>
-                        
-                        🤝<b>Skills Sharing Center</b><br>
-                        Unlock the potential within our community by sharing your skills or learning something new. From arts and crafts to tech wizardry, let's create a vibrant exchange where every resident contributes to a tapestry of talents. Your expertise matters — let's learn and grow together!<br><br>
-                        
-                        🌳 <b>Countryside Stewards Needed</b><br>
-                        Escape to the beauty of our countryside and play a role in its preservation. Volunteer for activities like tree planting, trail maintenance, or assisting local farmers. Connect with nature, meet like-minded individuals, and contribute to the beauty that defines our community.<br><br>
-                        
-                        ♻️ <b>Recycling Champions Unite</b><br>
-                        Turn waste into opportunity! Join our recycling initiatives and help manage the journey of materials from bins to a greener future. Whether you're into sorting, educational outreach, or community clean-ups, every action contributes to a more sustainable community.<br><br>
-                        
-                        🏠 <b>Get Involved, Make a Difference!</b><br>
-                        Your community thrives when you're an active part of it. Explore the programs, find your passion, and let's create a community where volunteering is not just an activity — it's a way of life. Together, let's make a positive impact that resonates for generations to come. Welcome to the heart of community involvement!</p>
-                </div>
-            </div>
-            <div class="col-md-2"></div>
+    <div class="container">
+        <div class="welcome">
+            <h2 class="m-3 text-center">Welcome to the  Volunteering Page</h2>
+            <p class="text-center">
+                📚 <b>Library Enthusiasts Wanted!</b>
+                Join us in shaping our literary haven. Whether you're passionate about organizing shelves, hosting book clubs, or simply creating a welcoming atmosphere, there's a place for you at our library. Let's build a space where knowledge thrives and stories come to life!<br><br>
+                
+                🤝<b>Skills Sharing Center</b>
+                Unlock the potential within our community by sharing your skills or learning something new. From arts and crafts to tech wizardry, let's create a vibrant exchange where every resident contributes to a tapestry of talents. Your expertise matters — let's learn and grow together!<br><br>
+                
+                🌳 <b>Countryside Stewards Needed</b>
+                Escape to the beauty of our countryside and play a role in its preservation. Volunteer for activities like tree planting, trail maintenance, or assisting local farmers. Connect with nature, meet like-minded individuals, and contribute to the beauty that defines our community.<br><br>
+                
+                ♻️ <b>Recycling Champions Unite:</b>
+                Turn waste into opportunity! Join our recycling initiatives and help manage the journey of materials from bins to a greener future. Whether you're into sorting, educational outreach, or community clean-ups, every action contributes to a more sustainable community.<br><br>
+                
+                🏠 <b>Get Involved, Make a Difference!</b>
+                Your community thrives when you're an active part of it. Explore the programs, find your passion, and let's create a community where volunteering is not just an activity — it's a way of life. Together, let's make a positive impact that resonates for generations to come. Welcome to the heart of community involvement!</p>
         </div>
-    </div>
         
+
+        <h1 class="text-center my-3">Select Volunteering Type:</h1>
+
         <div class="btn-container">
-            <h1 class="text-center font-weight-bold">Select Volunteering Type</h1>
-            <div class="row">
-                <div class="col-dm-1"></div>
-                <div class="col-md-4">
-                    <button class="btn-grad font-weight-bold" id="countryside">Countryside</button>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                    <button class="btn-grad font-weight-bold" id="recycling">Recycling</button>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-dm-1"></div>
-                <div class="col-md-4">
-                    <button class="btn-grad font-weight-bold" id="skills">Skills</button>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                    <button class="btn-grad font-weight-bold" id="library">Library</button>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
+            <button id="countryside">Countryside</button>
+            <button id="recycling">Recycling</button>
+            <button id="skills">Skills</button>
+            <button id="library">Library</button>
         </div>
 
         

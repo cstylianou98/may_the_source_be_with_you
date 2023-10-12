@@ -44,6 +44,8 @@ countrysideBtn.addEventListener("click", () => {
           btn.classList.add("active");
         }
       }
+    
+      document.getElementById("countryside-info").scrollIntoView()
 })
 
 
@@ -67,6 +69,8 @@ recyclingBtn.addEventListener("click", () => {
           btn.classList.add("active");
         }
       }
+
+      document.getElementById("recycling-info").scrollIntoView()
 })
 
 skillsBtn.addEventListener("click", () => {
@@ -88,6 +92,8 @@ skillsBtn.addEventListener("click", () => {
           btn.classList.add("active");
         }
       }
+
+      document.getElementById("skills-info").scrollIntoView()
 })
 
 libraryBtn.addEventListener("click", () => {
@@ -109,6 +115,8 @@ libraryBtn.addEventListener("click", () => {
           btn.classList.add("active");
         }
       }
+
+      document.getElementById("library-info").scrollIntoView()
 })
 
 
