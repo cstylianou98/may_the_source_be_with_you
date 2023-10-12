@@ -27,13 +27,14 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("background.jpg");    
+    background-image: url("./welcome.jpg"); 
     height: 100%;
     width:100%;
     margin: 0;
     padding: 0;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
@@ -70,5 +71,7 @@ h1{
 
 
 
-
+h1{
+    text-decoration: underline;
+}
 
