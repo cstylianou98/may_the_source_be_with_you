@@ -1,8 +1,9 @@
 .scrollable-container {
-    height: 200px; /* Adjust the height as needed */
+    height: 350px; /* Adjust the height as needed */
     overflow-y: scroll;
     background-color: aliceblue;
     padding: 10px 20px;
+    border-radius: 20px;
 
   
 }
