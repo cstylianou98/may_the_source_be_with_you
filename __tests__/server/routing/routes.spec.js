@@ -32,6 +32,11 @@ describe('api server', () => {
         })
     }
 
+    // const response = await request(api)
+    //   .post('/login')
+    //   .send(testData);
+
+    // expect(response.status).toBe(200);
     request(api)
         .post('/login')
         .send(testData)
