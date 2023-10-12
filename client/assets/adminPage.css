@@ -1,3 +1,85 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(243, 238, 238);
+}
+
 #dataTable {
     display: none;
+}
+
+
+.btn-grad{
+background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+margin: 10px;
+padding: 15px 45px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+}
+
+button, input {
+    overflow: visible;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.font-weight-bold {
+    font-weight: 700!important;
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    writing-mode: horizontal-tb !important;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+#messageDiv{
+    font-size: 20px;
+    font-weight: bold;
+  
 }

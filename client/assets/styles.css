@@ -22,7 +22,7 @@ body {
 
     color: black;
     min-width: 992px !important; 
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("background.jpg");    
+    background-color: rgba(105, 105, 105, 0.349);   
     height: 100%;
     width:100%;
     margin: 0;

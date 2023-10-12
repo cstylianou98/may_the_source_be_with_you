@@ -8,7 +8,8 @@ const clearData = document.getElementById("clear")
 
 const volunteeringTypes = ["Countryside", "Recycling", "Skills", "Library"]
 const table = document.getElementById('dataTable');
-const dataContainer = document.getElementById('data-container')
+const dataContainer = document.getElementById('dataContainer')
+const messageDiv = document.getElementById('messageDiv')
 
 const displayTables = async (volunteeringType) => {
     // Fetching the route
@@ -20,14 +21,17 @@ const displayTables = async (volunteeringType) => {
     // Upon successful volunteering GET request display details 
 
     if(response.status === 200){
+        messageDiv.innerHTML = '';
         table.style.display = 'table';
-        dataContainer.innerHTML = ''; //This is to clear any previous data
+        dataContainer.innerHTML = '';
 
         data.forEach(item => {
             const row = document.createElement('tr');
+            row.classList.add('table')
             const properties = ['name', 'email', 'contact_info', 'address'];
 
             properties.forEach(propName => {
+                
                 const columnName = document.createElement('td');
                 columnName.textContent = item[propName];
                 row.appendChild(columnName);
@@ -35,11 +39,12 @@ const displayTables = async (volunteeringType) => {
 
             dataContainer.appendChild(row);
         });
+        
     } else {
         // Handle errors here
         console.error('Error:', response.status);
-        const dataContainer = document.getElementById('data-container')
-        dataContainer.innerHTML = 'No volunteers in database found' 
+        table.style.display = 'none';
+        messageDiv.innerHTML = 'No volunteers in database found' 
     }
 }
 
@@ -52,7 +57,7 @@ volunteeringTypes.forEach(volunteeringType => {
 
 clearData.addEventListener("click", () => {
     table.style.display = 'none';
-    dataContainer.innerHTML = '';
+    messageDiv.innerHTML = '';
 })
 
 
