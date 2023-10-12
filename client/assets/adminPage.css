@@ -1,6 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(243, 238, 238);
+    background-color: rgba(183, 171, 171, 0.515);
 }
 
 #dataTable {
@@ -9,14 +9,14 @@ body{
 
 
 .btn-grad{
-background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+background-image: background-color: rgba(255, 255, 255, 0.8);
 margin: 10px;
 padding: 15px 45px;
 text-align: center;
 text-transform: uppercase;
 transition: 0.5s;
 background-size: 200% auto;
-color: white;
+color: black;
 box-shadow: 0 0 20px #eee;
 border-radius: 10px;
 }
