@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/adminPage.css">
+    <script src="assets/adminPage.js" defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+
+    <title>Admin Page</title>
 </head>
 <body>
-    <h1>Welcome to admin page</h1>
+
+  <nav class="navbar navbar-expand-lg bg-light mb-5">
+    <div class="container">
+      <a class="navbar-brand" id="logout">
+        <img src="./assets/logout.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Log Out
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="aboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="homePage.html">Home</a>
+          </li>
+        <li>
+          <a class="nav-link active" aria-current="page" href="volunteer.html">Volunteer</a>
+        </li>
+    </ul>
+    </div>
+  </nav>
+
+    <h1 class="text-center my-5">Welcome to the admin page</h1>
+    <h2 class="text-center my-5">Volunteering info</h2>
+    <h3 class="text-center mb-5">Select which volunteer information you want to see:</h3>
+
+    <div class="btn-container text-center">
+        
+        <button id="countryside" class="btn-grad font-weight-bold my-btn">Countryside</button>
+        <button id="recycling" class="btn-grad font-weight-bold my-btn">Recycling</button>
+        <button id="skills" class="btn-grad font-weight-bold my-btn">Skills</button>
+        <button id="library" class="btn-grad font-weight-bold my-btn">Library</button>
+        <button id="clear" class="btn-grad font-weight-bold my-btn">Clear Data</button>
+    </div>
     
+    <table id="dataTable" class="table table-striped text-center my-5">
+           <thead>
+             <tr>
+               <th scope="col">Name</th>
+               <th scope="col">Email</th>
+               <th scope="col">Contact Info</th>
+               <th scope="col">Address</th>
+             </tr>
+        </thead>
+       <tbody id="dataContainer"></tbody>
+    </table>
+    <div id="messageDiv" class="text-center my-5"></div>
+
+    <footer class="py-3 mt-4 bg-light text-center fixed-bottom">
+      <div class="container">
+          © 2023 May the source be with you.
+      </div>
+      </footer>
+
 </body>
 </html>

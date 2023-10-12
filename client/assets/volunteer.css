@@ -1,15 +1,22 @@
 body {
-    background-image: url(./welcome.jpg);    
+    /* background-image: url(./welcome.jpg);     */
+    background-color: rgba(183, 171, 171, 0.515);
     height: 100%;
     width:100%;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
   }
+
+.welcome{
+    font-size: 22px;
+}
+
+
 
 .disappear{
     display: none;
@@ -17,34 +24,19 @@ body {
 
 /* Welcome Section */
 .welcome{
-    width: 80%;
-    margin: 20px auto;
-    padding: 40px;
-    /* height: 100vh; */
+    width: 100%;
 
     border: black solid;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background */
 }
 
-
 /* Select Volunteering Type */
 
-.btn-container{
-    /* Dimensions */
-    height: 500px;
+.my-btn{
+    width: 300px;
+    height: 100px;
     margin: 10px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.btn-container button{
-    width: 400px;
-    height: 150px;
-    margin: 7px;
 
     /* Font Styling */
     font-size: 30px;
@@ -53,8 +45,16 @@ body {
     border-radius: 23px;
 }
 
-.btn-container button:hover{
-    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+.btn-container button{
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+
+    /* Font Styling */
+    font-size: 30px;
+
+    /* Button Styling */
+    border-radius: 23px;
 }
 
 /* Volunteering Information */
@@ -65,28 +65,23 @@ body {
 
 .info h2{
     font-size: 45px;
-    text-decoration: underline;
 }
 
-.volunteering-type{
-    text-decoration: underline;
-}
 
 /* Welcome Message */
 
          
 .btn-grad {
-background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+background-color: rgba(255, 255, 255, 0.8);;
 margin: 10px;
 padding: 15px 45px;
 text-align: center;
 text-transform: uppercase;
 transition: 0.5s;
 background-size: 200% auto;
-color: white;            
+color: black;            
 box-shadow: 0 0 20px #eee;
 border-radius: 10px;
-display: block;
 }
 
 .btn-grad:hover {

@@ -1,8 +1,9 @@
 .scrollable-container {
-    height: 200px; /* Adjust the height as needed */
+    height: 350px; /* Adjust the height as needed */
     overflow-y: scroll;
     background-color: aliceblue;
     padding: 10px 20px;
+    border-radius: 20px;
 
   
 }
@@ -27,13 +28,14 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("background.jpg");    
+    background-color: rgba(183, 171, 171, 0.515);
     height: 100%;
     width:100%;
     margin: 0;
     padding: 0;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
@@ -67,8 +69,6 @@ h1{
     font-size: 16px;
     font-family:'Montserrat', sans-serif;
 }
-
-
 
 
 

@@ -14,68 +14,122 @@
     <title>Volunteer</title>
 </head>
 <body>
-    
-    <div class="container">
-        <div class="welcome">
-            <h2 class="m-3 text-center">Welcome to the  Volunteering Page</h2>
-            <p class="text-center">
-                📚 <b>Library Enthusiasts Wanted!</b>
-                Join us in shaping our literary haven. Whether you're passionate about organizing shelves, hosting book clubs, or simply creating a welcoming atmosphere, there's a place for you at our library. Let's build a space where knowledge thrives and stories come to life!<br><br>
-                
-                🤝<b>Skills Sharing Center</b>
-                Unlock the potential within our community by sharing your skills or learning something new. From arts and crafts to tech wizardry, let's create a vibrant exchange where every resident contributes to a tapestry of talents. Your expertise matters — let's learn and grow together!<br><br>
-                
-                🌳 <b>Countryside Stewards Needed</b>
-                Escape to the beauty of our countryside and play a role in its preservation. Volunteer for activities like tree planting, trail maintenance, or assisting local farmers. Connect with nature, meet like-minded individuals, and contribute to the beauty that defines our community.<br><br>
-                
-                ♻️ <b>Recycling Champions Unite:</b>
-                Turn waste into opportunity! Join our recycling initiatives and help manage the journey of materials from bins to a greener future. Whether you're into sorting, educational outreach, or community clean-ups, every action contributes to a more sustainable community.<br><br>
-                
-                🏠 <b>Get Involved, Make a Difference!</b>
-                Your community thrives when you're an active part of it. Explore the programs, find your passion, and let's create a community where volunteering is not just an activity — it's a way of life. Together, let's make a positive impact that resonates for generations to come. Welcome to the heart of community involvement!</p>
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg bg-light mb-5">
+        <div class="container">
+          <a class="navbar-brand" id="logout">
+            <img src="./assets/logout.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Log Out
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="homePage.html">Home</a>
+              </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="volunteer.html">Volunteer</a>
+            </li>
+        </ul>
         </div>
+      </nav>
+
+    <!-- Content -->
+    <div class="container-fluid">
+
+            <!-- Welcome  -->
+
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 text-center welcome">
+                        <h1 class="font-weight-bold mt-3">Welcome to the  Volunteering Page</h2><br>
+                        <p class="">
+                        📚 <b>Library Enthusiasts Wanted!</b><br>
+                        Join us in shaping our literary haven. Whether you're passionate about organizing shelves, hosting book clubs, or simply creating a welcoming atmosphere, there's a place for you at our library. Let's build a space where knowledge thrives and stories come to life!<br><br>
+                        
+                        🤝<b>Skills Sharing Center</b><br>
+                        Unlock the potential within our community by sharing your skills or learning something new. From arts and crafts to tech wizardry, let's create a vibrant exchange where every resident contributes to a tapestry of talents. Your expertise matters — let's learn and grow together!<br><br>
+                        
+                        🌳 <b>Countryside Stewards Needed</b><br>
+                        Escape to the beauty of our countryside and play a role in its preservation. Volunteer for activities like tree planting, trail maintenance, or assisting local farmers. Connect with nature, meet like-minded individuals, and contribute to the beauty that defines our community.<br><br>
+                        
+                        ♻️ <b>Recycling Champions Unite:</b><br>
+                        Turn waste into opportunity! Join our recycling initiatives and help manage the journey of materials from bins to a greener future. Whether you're into sorting, educational outreach, or community clean-ups, every action contributes to a more sustainable community.<br><br>
+                        
+                        🏠 <b>Get Involved, Make a Difference!</b><br>
+                        Your community thrives when you're an active part of it. Explore the programs, find your passion, and let's create a community where volunteering is not just an activity — it's a way of life. Together, let's make a positive impact that resonates for generations to come. Welcome to the heart of community involvement!</p>
+                    </div>
+                    <div class="col-md-2"></div>  
+                </div>
         
 
-        <h1 class="text-center my-3">Select Volunteering Type:</h1>
 
-        <div class="btn-container">
-            <button id="countryside">Countryside</button>
-            <button id="recycling">Recycling</button>
-            <button id="skills">Skills</button>
-            <button id="library">Library</button>
-        </div>
+        <!-- Select Volunteering Type -->
+
+        <h1 class="text-center my-3 font-weight-bold my-5 select-volunteering-type">Select Volunteering Type</h1>
+        
+        
+            <div class="row volunteering-buttons">    
+                <div class="col-md-2"></div>
+                <div class="col-md-4 text-center">
+                    <button id="countryside" class="btn-grad font-weight-bold my-btn">Countryside</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button id="recycling" class="btn-grad font-weight-bold my-btn">Recycling</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">    
+                <div class="col-md-2"></div>
+                <div class="col-md-4 text-center">
+                    <button id="skills" class="btn-grad font-weight-bold my-btn">Skills</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button id="library" class="btn-grad font-weight-bold my-btn">Library</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+
 
         
         <!-- Volunteering Information -->
         
-        <div class="info countryside m-3 text-center disappear" >
-            <div class="row">
+        <!-- <div class="info countryside m-3 text-center disappear" > -->
+            <div class="row info countryside m-3 text-center disappear">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <h2>Countryside Volunteering</h2>
+                    <h2 class="font-weight-bold my-5">Countryside Volunteering</h2>
                     <p>Escape to the tranquility of the countryside and contribute to the well-being of our rural landscapes through volunteering. Embrace the outdoors as you engage in a variety of meaningful activities. Join us in planting trees to foster greenery, maintaining hiking trails for the community to enjoy, or assisting local farmers with their harvests. Whether you have a green thumb, a passion for wildlife conservation, or simply a love for the open spaces, there's a place for you. Connect with nature and your community, leaving a lasting impact on the picturesque countryside that we all cherish. Together, let's sow the seeds of positive change and cultivate a stronger, more sustainable future.</p>
                 </div>
                 <div class="col-md-2"></div>
             </div>  
-        </div>
+        <!-- </div> -->
 
-        <div class="info recycling m-3  text-center disappear">
-            <div class="row">
+        <!-- <div class="info recycling m-3 text-center disappear"> -->
+            <div class="row info recycling m-3 text-center disappear">
                 <div class="col-md-2"></div>
                     <div class="col-md-8">
-                        <h2>Help us to recycle</h2>
+                        <h2 class="font-weight-bold my-5">Help us to recycle</h2>
                         <p>Transform waste into opportunity! Join our recycling initiatives. Volunteer to sort, educate, and make our community greener. Every recycled item is a step towards a sustainable tomorrow.</p>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
             </div>  
-        </div>
+        <!-- </div> -->
 
-        <div class=" info skills m-3  text-center disappear">
-            <div class="row">
+        <!-- <div class=" info skills m-3  text-center disappear"> -->
+            <div class="row info skills m-3  text-center disappear">
                 <div class="col-md-2"></div>
                     <div class="col-md-8">
-                        <h2>Teach your skills</h2>
+                        <h2 class="font-weight-bold my-5">Teach your skills</h2>
                         <p>
                             Empower our community through skills sharing! Volunteer to teach or learn. Whether it's crafting, coding, or cooking, your expertise matters. Let's build a network where knowledge is the key to collective growth.
                         </p>
@@ -83,19 +137,19 @@
                     <div class="col-md-2"></div>
                 </div>
             </div> 
-        </div>
+        <!-- </div> -->
 
-        <div class="info library m-3  text-center disappear">
-            <div class="row">
+        <!-- <div class="info library m-3  text-center disappear"> -->
+            <div class="row info library m-3  text-center disappear">
                 <div class="col-md-2"></div>
                     <div class="col-md-8">
-                        <h2>Save the library</h2>
+                        <h2 class="font-weight-bold my-5">Save the library</h2>
                         <p>Open the door to a world of knowledge! Volunteer at our library. Help organize events, share your love for reading, or assist visitors. Together, let's make our library a vibrant hub for learning and connection.</p>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
             </div> 
-        </div>
+        <!-- </div> -->
         
             <!-- Volunteering Form -->
         
@@ -105,9 +159,9 @@
                         <h2 class="volunteering-type"></h2>
                         <h3 class="volunteering-info"></h3>
                     </div>
-                    <div class="form-icon">
+                    <!-- <div class="form-icon">
                         <span><i class="icon icon-user"></i></span>
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <input type="text" class="form-control item" id="name" placeholder="Name" required>
                     </div>
@@ -136,6 +190,12 @@
             </div>
 
     </div>
+
+<footer class="py-3 mt-4 bg-light text-center">
+    <div class="container">
+        © 2023 May the source be with you.
+    </div>
+    </footer>
 
 </body>
 </html>
