@@ -14,29 +14,30 @@
     <title>Admin Page</title>
 </head>
 <body>
-    <h1>Welcome to admin page</h1>
-    <h2>Volunteering info</h2>
-    <h3>Select which volunteer information you want to see:</h3>
+    <h1 class="text-center my-5">Welcome to the admin page</h1>
+    <h2 class="text-center my-5">Volunteering info</h2>
+    <h3 class="text-center mb-5">Select which volunteer information you want to see:</h3>
 
-    <div class="btn-container">
-        <button id="countryside">Countryside</button>
-        <button id="recycling">Recycling</button>
-        <button id="skills">Skills</button>
-        <button id="library">Library</button>
-        <button id="clear">Clear Data</button>
+    <div class="btn-container text-center">
+        
+        <button id="countryside" class="btn-grad font-weight-bold my-btn">Countryside</button>
+        <button id="recycling" class="btn-grad font-weight-bold my-btn">Recycling</button>
+        <button id="skills" class="btn-grad font-weight-bold my-btn">Skills</button>
+        <button id="library" class="btn-grad font-weight-bold my-btn">Library</button>
+        <button id="clear" class="btn-grad font-weight-bold my-btn">Clear Data</button>
     </div>
     
-    <table id="dataTable">
+    <table id="dataTable" class="table table-striped text-center my-5">
            <thead>
              <tr>
-               <th>Name</th>
-               <th>Email</th>
-               <th>Contact Info</th>
-               <th>Address</th>
+               <th scope="col">Name</th>
+               <th scope="col">Email</th>
+               <th scope="col">Contact Info</th>
+               <th scope="col">Address</th>
              </tr>
         </thead>
        <tbody id="dataContainer"></tbody>
     </table>
-    <div id="data-container"></div>
+    <div id="messageDiv" class="text-center my-5"></div>
 </body>
 </html>
