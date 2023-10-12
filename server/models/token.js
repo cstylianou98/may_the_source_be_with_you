@@ -23,7 +23,6 @@ class Token {
         const response = await db.query("INSERT INTO token (users_id, token) VALUES ($1, $2) RETURNING token_id;",
             [users_id, token]);
 
-
         // Return the new information inserted into the table
             // = {}
         const newId = response.rows[0].token_id;

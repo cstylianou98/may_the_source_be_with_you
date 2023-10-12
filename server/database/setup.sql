@@ -46,7 +46,7 @@ CREATE TABLE volunteering(
     volunteering_type VARCHAR(200) NOT NULL,
     PRIMARY KEY (volunteering_id),
     FOREIGN KEY (users_id) REFERENCES users("users_id"),
-    CONSTRAINT combo UNIQUE (users_id, volunteering_type)
+    CONSTRAINT combo UNIQUE (users_id,name, volunteering_type)
 );
 
 INSERT INTO admins (username, password) 
