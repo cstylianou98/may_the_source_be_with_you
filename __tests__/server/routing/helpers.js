@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 const fs = require('fs');
 const bcrypt = require("bcrypt")
 const { v4: uuidv4 } = require("uuid");
-const db = require('../../../server/database/connect')
+// const db = require('../../../server/database/connect')
 
 const dotenv = require('dotenv')
 dotenv.config()
@@ -16,7 +16,7 @@ const resetTestDB = () => {
       const db = new Pool({
         connectionString: process.env.DB_URL
       });
-      await db.query(reset)
+      let run = await db.query(reset)
       try {
         const passwords = await db.query("SELECT password FROM users")
 

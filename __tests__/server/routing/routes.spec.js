@@ -20,7 +20,7 @@ describe('api server', () => {
     api.close(done)
   })
 
-  test('responds to POST /login with status 200', async(done) => {
+  test('responds to POST /login with status 200', (done) => {
     const testData = {
         headers: {
             'Accept': 'application/json',
@@ -32,9 +32,10 @@ describe('api server', () => {
         })
     }
 
-    await request(api)
+    request(api)
         .post('/login')
         .send(testData)
-        .expect(200,done)
+        .expect(200) 
+    done()
   })
 })
