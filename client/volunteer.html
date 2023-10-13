@@ -9,7 +9,7 @@
     <script src="assets/volunteer.js" defer></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
     <script defer src="./assets/checkAuth.js"></script>
     <title>Volunteer</title>
 </head>
@@ -18,7 +18,7 @@
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg bg-light mb-5">
         <div class="container">
-          <a class="navbar-brand" id="logout">
+          <a class="navbar-brand" id="logout" href="index.html">
             <img src="./assets/logout.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Log Out
           </a>
@@ -48,7 +48,7 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-8 text-center welcome">
-                        <h1 class="font-weight-bold mt-3">Welcome to the  Volunteering Page</h2><br>
+                        <h1 class="font-weight-bold mt-3">How you can Volunteer in Florin and Burkes</h2><br>
                         <p class="">
                         📚 <b>Library Enthusiasts Wanted!</b><br>
                         Join us in shaping our literary haven. Whether you're passionate about organizing shelves, hosting book clubs, or simply creating a welcoming atmosphere, there's a place for you at our library. Let's build a space where knowledge thrives and stories come to life!<br><br>
@@ -175,18 +175,10 @@
                         <input type="text" class="form-control item" id="address" placeholder="Address" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-block create-account">Volunteer</button>
+                        <button type="submit" class="btn btn-block create-account" id="volunteer-submit">Volunteer</button>
                     </div>
                     <p class="text-center" id="volunteering-complete"></p>
                 </form>
-                <div class="social-media">
-                    <h5>Sign up with social media</h5>
-                    <div class="social-icons">
-                        <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
-                        <a href="#"><i class="icon-social-google" title="Google"></i></a>
-                        <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
-                    </div>
-                </div>
             </div>
 
     </div>

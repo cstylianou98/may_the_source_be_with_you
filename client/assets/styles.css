@@ -1,6 +1,6 @@
 
  :root {
-    --primary-colour: #23527c;
+    --primary-colour: #A01300;
     --secondary-colour: #333333;
 
     --font: "FontAwesome"
@@ -43,7 +43,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
   

@@ -23,34 +23,36 @@
     ></script>
     <script defer src="./assets/logout.js"></script>
     <script defer src="./assets/checkAuth.js"></script>
+    <script src="./assets/home.js" defer></script>
   </head>
 
   <body oncontextmenu="return false" class="snippet-body">
 
     <!-- Announcements -->
-    <nav class="navbar navbar-expand-lg bg-light ">
-        <div class="container">
-          <a class="navbar-brand" id="logout">
-            <img src="./assets/logout.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Log Out
-          </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="aboutUs.html">About Us</a>
+    <nav class="navbar navbar-expand-lg bg-light mb-5">
+      <div class="container">
+        <a class="navbar-brand" id="logout" href="index.html">
+          <img src="./assets/logout.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Log Out
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="homePage.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="homePage.html">Home</a>
-              </li>
-            <li>
-              <a class="nav-link active" aria-current="page" href="volunteer.html">Volunteer</a>
-            </li>
-        </ul>
-        </div>
-      </nav>
+          <li>
+            <a class="nav-link active" aria-current="page" href="volunteer.html">Volunteer</a>
+          </li>
+      </ul>
+      </div>
+    </nav>
+
 
     <h1 class="text-center font-weight-bold py-5">Council Announcements</h1>
     <div class="bd-example pb-5">
@@ -259,7 +261,7 @@
       
       
       <div class="col-md-12 my-4 text-center"> 
-        <a id="volunteeringButton" href="volunteer.html" class="btn btn-primary mt-auto volunteering-link">Volunteer Here!</a>
+        <a href="./volunteer.html"><button class="btn-grad my-btn" id="volunteer">Volunteer</button></a>
       </div>
      
     </section>
