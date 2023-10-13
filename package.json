@@ -8,7 +8,7 @@
     "dev": "nodemon ./server/index.js",
     "both": "node ./server/database/setup.js && nodemon ./server/index.js",
     "test": "jest --colors",
-    "super-test": "jest --colors --detectOpenHandles --runInBand --testPathPattern=/__tests__/client/volunteer.spec.js",
+    "super-test": "jest --colors --detectOpenHandles --runInBand --testPathPattern=/__tests__/server/models/",
     "coverage": "jest --colors --coverage",
     "coverageMAX": "jest --colors --coverage --collectCoverageFrom=./**/*.{js,jsx}"
   },

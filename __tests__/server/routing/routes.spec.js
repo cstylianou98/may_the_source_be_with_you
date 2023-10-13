@@ -181,27 +181,109 @@ describe('api server', () => {
         },
         body: JSON.stringify({
             token: "tock",
-            name: name.value,
-            email: email.value,
-            contact_info: contactInfo.value,
-            address: address.value,
+            name: "C",
+            email: "email",
+            contact_info: "000",
+            address: "test",
         })
     }
+
+    request(api)
+        .post('volunteer/event/6')
+        .send(testData)
+        .expect(201)
+        .expect({result: 'You have successfully volunteered. We look forward to seeing you soon'})
+    done()
   })
 
   test('responds to POST /volunteer/event/:event with status 401', (done) => {
+    const testData = {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            token: "tock",
+            name: "C",
+            email: "email",
+            contact_info: "000",
+            address: "test",
+        })
+    }
 
+    request(api)
+        .post('volunteer/event/6')
+        .send(testData)
+        .send(testData)
+        .expect(401)
+        .expect({error: 'You have already volunteered'})
+    done()
   })
 
   test('responds to GET /volunteer/user/:user with status 200', (done) => {
+    request(api)
+        .get('/volunteer/user/1')
+        .expect(200)
+    done()
+  })
 
+  test('responds to GET /volunteer/user/:user with status 500', (done) => {
+    request(api)
+        .get('/volunteer/user/15')
+        .expect(500)
+        .expect({error: 'User hasnt volunteered'})
+    done()
   })
 
   test('responds to DELETE /volunteer/:id with status 204', (done) => {
+    request(api)
+        .delete('volunteer/1')
+        .expect(204)
+    done()
+  })
 
+  test('responds to DELETE /volunteer/:id with status 404', (done) => {
+    request(api)
+        .delete('volunteer/15')
+        .expect(404)
+        .expect({error: "Couldn't delete volunteer instance"})
+    done()
   })
 
   test('responds to PATCH /volunteer/:id with status 200', (done) => {
+    const testData = {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: "Jefferson"
+        })
+    }
 
+    request(api)
+        .patch('/volunteer/3')
+        .send(testData)
+        .expect(200)
+    done()
+  })
+
+  test('responds to PATCH /volunteer/:id with status 400', (done) => {
+    const testData = {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: "Jefferson"
+        })
+    }
+
+    request(api)
+        .patch('/volunteer/30')
+        .send(testData)
+        .expect(400)
+        .expect({error: "Couldn't update volunteer instance"})
+    done()
   })
 })
