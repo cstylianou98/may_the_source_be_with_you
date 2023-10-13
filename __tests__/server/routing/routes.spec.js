@@ -159,10 +159,37 @@ describe('api server', () => {
   })
 
   test('responds to GET /volunteer/event/:event with status 200', (done) => {
-
+    request(api)
+        .get('/volunteer/event/1')
+        .expect(200)
+    done()
   })
 
-  test('responds to POST /volunteer/event/:event with status 200', (done) => {
+  test('responds to GET /volunteer/event/:event with status 500', (done) => {
+    request(api)
+        .get('/volunteer/event/15')
+        .expect(500)
+        .expect({error: 'No volunteers for that event'})
+    done()
+  })
+
+  test('responds to POST /volunteer/event/:event with status 201', (done) => {
+    const testData = {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            token: "tock",
+            name: name.value,
+            email: email.value,
+            contact_info: contactInfo.value,
+            address: address.value,
+        })
+    }
+  })
+
+  test('responds to POST /volunteer/event/:event with status 401', (done) => {
 
   })
 
